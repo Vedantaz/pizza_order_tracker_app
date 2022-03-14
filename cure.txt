@@ -1,0 +1,3 @@
+npm i -g corepack
+yarn init 
+to ignore questions : yarn init -y

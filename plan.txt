@@ -1,0 +1,14 @@
+we will use yarn , coz it is faster than npm in general 
+
+ - empty cart collection 
+1> Create directory structure
+2. Create NPM project and install all dependencies ..
+  -  Dependencies
+    - express 
+    - ejs express-ejs-layouts
+  - Dev dependencies 
+    - nodemon 
+3. Create an express server  - Createa server.js file 
+4. Create home page usinf html, CSS 
+  - use TailWind CSS 
+5. Create car5t page 
