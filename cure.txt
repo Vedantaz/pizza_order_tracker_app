@@ -1,3 +1,10 @@
 npm i -g corepack
 yarn init 
 to ignore questions : yarn init -y
+git init 
+git add .
+git commit -m "commit yourself."
+yarn add laravel-mix -D =  yarn add laravel-mix --save-dev 
+1. Error: No default engine was specified and no extension was provided.
+soln : engine has to be set by app.set ("", engine name)
+e.g -> app.set('views', express.static(__dirname + '/resources/views'));

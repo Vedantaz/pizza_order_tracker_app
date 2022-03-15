@@ -9,6 +9,9 @@ we will use yarn , coz it is faster than npm in general
   - Dev dependencies 
     - nodemon 
 3. Create an express server  - Createa server.js file 
-4. Create home page usinf html, CSS 
-  - use TailWind CSS 
-5. Create car5t page 
+4. Get setup and first commit 
+5. Install Laravel Mix 
+   - setup js and css 
+6. Install tailwind  CSS 
+7. Create home page using html, CSS 
+8. Create cart page 
