@@ -7,8 +7,13 @@ const path = require('path')  // it is an inbuilt module in node.js...
 
 let mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js/app.js').sass('resources/scss/app.scss', 'public/css/app.css');
+
 app.get('/', (req, res) => {
     res.render('home')
+})
+
+app.get('/cart', (req, res) => {
+    res.render('customers/cart')
 })
 // setting template engine
 app.use(expressLayout);
