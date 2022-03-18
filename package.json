@@ -6,13 +6,11 @@
   "repository": "https://github.com/Vedantaz/pizza_order_tracker_app.git",
   "author": "Vedantaz <muleyvedant4@gmail.com>",
   "scripts": {
-    "serve": "node server.js",
-    "prod": "npm run production",
-    "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch-poll": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "server": "node server.js",
+    "dev": "nodemon server.js",
+    "development": " mix ",
+    "watch": " npx mix watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -22,10 +20,15 @@
     "express-ejs-layouts": "^2.5.1",
     "nodemon": "^2.0.15",
     "watch": "^1.0.2",
+    "webpack": "^5.70.0",
     "webpack-mix": "^3.0.0"
   },
   "devDependencies": {
     "laravel-mix": "^6.0.43",
-    "tailwindcss": "^3.0.23"
+    "resolve-url-loader": "5.0.0",
+    "sass": "^1.49.9",
+    "sass-loader": "12.1.0",
+    "tailwindcss": "^3.0.23",
+    "webpack-cli": "^4.9.2"
   }
 }

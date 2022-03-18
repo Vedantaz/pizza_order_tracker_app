@@ -1,4 +1,32 @@
 $primary: red;
 body{
     background: $primary;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-font-smoothing: antialiased; 
+height:4000px;
+
+}
+@import '_variables';
+nav li:last-child a{
+    background:$primary;
+    color:$pure;
+    &:hover{ 
+        background:$primary-hover;
+    }
+}
+nav li a{
+    transition:$smooth;
+    &:hover{
+        color:$primary;
+    }
+}
+section.hero{
+    background: $secondary;
+}
+.btn-primary{
+    background : $primary;
+    transition : $smooth;
+    &:hover{
+        background:$primary-hover;
+    }
 }

@@ -1,33 +1,3 @@
-npm i -g corepack
-yarn init 
-to ignore questions : yarn init -y
-git init 
-git add .
-git commit -m "commit yourself."
-yarn add laravel-mix -D =  yarn add laravel-mix --save-dev 
-1. Error: No default engine was specified and no extension was provided.
-soln : engine has to be set by app.set ("", engine name)
-e.g -> app.set('views', express.static(__dirname + '/resources/views'));
-2 . mix.js is not a function ->
-  soln :
-    it may be due to advanced version of laravel.mix .
-    Because in 5.0.4 version > it is working properly -> but at this time when current vesion of laravel.mix  = --version .. 6.0.43
-    Not working and giving this error. 
-    To do yarn watch  ->  yarn watch
-    showing ->    We will use "yarn" to install the CLI via "yarn add -D webpack-cli".
-                  Do you want to install 'webpack-cli' (yes/no): yes
-    vry much time it took -> Result :
-    : [webpack-cli] Error: Unknown option '--hide-modules'
-    [webpack-cli] Run 'webpack --help' to see available commands and options
-    error Command failed with exit code 2.
-
-so final soln :  use updated tailwindcss , laravel-mix version and run npx mix .
-                 Actually not run , you have to add some scripts in package.json ->
-                 in place of production , development and watch. { is in the package.json }
-                 # but although we install tailwind css package -> the css , scss ,js in a/c to path dpesn't 
-                 means -> simply css we applied doesn't working.
-                 that's why we haev to add cdn link in home.ejs as a script.  
-webpack.mix.js.
 let mix = require('laravel-mix');
 
 /*
@@ -41,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/app.js', 'dist/').sass('src/app.scss', 'dist/');
+mix.js('resources/js/app.js', 'public/js/app.js').sass('resources/scss/app.scss', 'public/css/app.css');
 
 // Full API
 // mix.js(src, output);
