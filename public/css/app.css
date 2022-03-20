@@ -1,11 +1,12 @@
 body {
-  background: red;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: #d17a28;
+  font-family: "Lato", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   -webkit-font-smoothing: antialiased;
-  height: 4000px;
+  color: #232323;
 }
 
-nav li:last-child a {   
+nav li:last-child a {
+  background: #d17a28;
   color: #fff;
 }
 nav li:last-child a:hover {
@@ -16,17 +17,47 @@ nav li a {
   transition: all 0.3s ease-in-out;
 }
 nav li a:hover {
-  color: #FE5F1E;
+  color: #d17a28;
 }
 
 section.hero {
-  background: #F8F8F8;
+  background: #cfc0bd;
 }
 
 .btn-primary {
-  background: #FE5F1E;
+  background: #d17a28;
   transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
   background: #b23301;
+}
+
+section.cart {
+  background: #cfc0bd;
+}
+section.cart .cost {
+  color: #d17a28;
+}
+
+section.menu {
+  background: #cfc0bd;
+}
+section.menu .menu-item {
+  background: #d17a28;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+section.menu .menu-item:hover {
+  background: #b23301;
+}
+
+section.login {
+  background: #cfc0bd;
+  min-height: calc(100vh - 86px);
+}
+section.login a {
+  color: #d17a28;
+}
+section.login a:hover {
+  color: #b23301;
 }

@@ -1,12 +1,12 @@
-$primary: red;
+@import './variables';
+$primary: rgb(209, 122, 40);
+$secondary: #cfc0bd;
 body{
     background: $primary;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lato','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     -webkit-font-smoothing: antialiased; 
-height:4000px;
-
+    color:$dark;
 }
-@import '_variables';
 nav li:last-child a{
     background:$primary;
     color:$pure;
@@ -29,4 +29,32 @@ section.hero{
     &:hover{
         background:$primary-hover;
     }
+}
+section.cart{
+    background: $secondary;
+    .cost{
+        color:$primary;
+    }
+}
+section.menu{
+    background: $secondary;
+    .menu-item{
+        background:$primary;
+        color:$pure;
+        transition:$smooth;
+        &:hover{
+            background:$primary-hover;
+        }
+    }
+}
+section.login{
+    background: $secondary;
+min-height:calc(100vh - 86px);
+a{
+    color:$primary;
+    &:hover{
+        color:$primary-hover;
+    }
+
+}
 }
