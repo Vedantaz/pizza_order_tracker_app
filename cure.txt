@@ -5,6 +5,7 @@ git init
 git add .
 git commit -m "commit yourself."
 yarn add laravel-mix -D =  yarn add laravel-mix --save-dev 
+yarn add mongoose 
 1. Error: No default engine was specified and no extension was provided.
 soln : engine has to be set by app.set ("", engine name)
 e.g -> app.set('views', express.static(__dirname + '/resources/views')); 
@@ -46,7 +47,7 @@ simple do it as mx-auto -> a @tailwind-css utility.
 the soln :
  1. write correct path , 
  2. co-relate your path with the path you are in working 
- 3. write code like : img src='/img/cart-img.png' 💯 , wrong way : img src='/img/cart-img' ; it's a small thing but yaa , yaa shows 4040 error if extension we don't write.
+ 3. write code like : img src='/img/cart-img.png' 💯 , wrong way : im g src='/img/cart-img' ; it's a small thing but yaa , yaa shows 4040 error if extension we don't write.
 
  # flex-1 > jiitni bhi space sab space eauqal divide krte he sab elements
 
@@ -68,3 +69,12 @@ the soln :
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
 }
+5. Error: Cannot find module 'express-session'
+Require stack: :
+soln.  npm install express-session
+
+6. TypeError: connection.once(...).catch is not a function
+
+
+7. Error: Cannot find module 'connect-mongo'
+Require stack:

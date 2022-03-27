@@ -7,6 +7,8 @@ body {
 
 nav li:last-child a {
   background: #d17a28;
+  height: 35%;
+  width: 35%;
   color: #fff;
 }
 nav li:last-child a:hover {

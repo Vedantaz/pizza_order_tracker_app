@@ -9,6 +9,8 @@ body{
 }
 nav li:last-child a{
     background:$primary;
+    height:35%;
+    width:35%;
     color:$pure;
     &:hover{ 
         background:$primary-hover;
@@ -55,6 +57,5 @@ a{
     &:hover{
         color:$primary-hover;
     }
-
 }
 }

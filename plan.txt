@@ -15,3 +15,10 @@ we will use yarn , coz it is faster than npm in general
 6. Install tailwind  CSS 
 7. Create home page using html, CSS 
 8. Create cart page 
+  - order summary sections
+  - empty cart sections
+9. move routes to routes files 
+10. Create dedicated controllers
+11. Add to cart functionality
+   - Fetch all the pizzas from db , show on home page .
+   
