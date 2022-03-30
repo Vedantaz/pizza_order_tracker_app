@@ -1,4 +1,4 @@
-const Meun = require('../app/models/menu')
+const Menu = require('./../../models/menu')
 
 let homeController = () => {
     // factory functions : new concept in javascript

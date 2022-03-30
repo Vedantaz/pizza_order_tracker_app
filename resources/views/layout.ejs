@@ -33,8 +33,15 @@
                 <li class="ml-6"> <a href="/register">Register </a> </li>
                 <li class="ml-6"> <a href="/login">Login </a> </li>
                 <li class="ml-6"> <a href="/cart" class="rounded-full h-9 "> <img
-                            class="inline-block px-4 py-2 rounded-full" style="height: 66px;
-                            width: 101px;" src="/img/pizza_app_shopping_cart.png" alt=""></a> </li>
+                            class="inline-block px-4 py-2 rounded-full flex-items-center" alt="">
+                        <span id="cartCounter" class=" text-white font-bold ">
+                            <%= session.cart ? session.cart.totalQty : "" %>
+                        </span>
+                        <img style="height: 66px;
+                        width: 101px;" src="/img/pizza_app_shopping_cart.png" alt="">
+
+                    </a> </li>
+
             </ul>
         </div>
     </nav>

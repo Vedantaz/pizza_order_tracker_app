@@ -7,58 +7,62 @@
         </div>
         <hr>
         <div class="pizza-list">
-            <div class=" flex items-center my-8">
-                <img class="w-24" src="/img/pizza_img_for_app.png" style="height: 48px;
-                width: 59px;" alt="">
-                <div class=" flex-1 ml-4">
-                    <h1>Marinara</h1>
-                    <span>MEDIUM</span>
-                </div>
-                <span class="flex-1">1pcs</span>
-                <span class="font-bold text-lg"> $10.00</span>
-            </div>
-            <hr>
-            <div class=" flex items-center  my-8">
-                <img class="w-24" src="/img/pizza_img_for_app.png" style="height: 48px;
-                width: 59px;" alt="">
-                <div class=" flex-1 ml-4">
-                    <h1>Marinara</h1>
-                    <span>MEDIUM</span>
-                </div>
-                <span class="flex-1">1pcs</span>
-                <span class="font-bold text-lg"> $10.00</span>
-            </div>
-            <hr>
-            <div class=" flex items-center my-8">
-                <img class="w-24" src="/img/pizza_img_for_app.png" style="height: 48px;
-                width: 59px;" alt="">
-                <div class=" flex-1 ml-4">
-                    <h1>Marinara</h1>
-                    <span>MEDIUM</span>
-                </div>
-                <span class="flex-1">1pcs</span>
-                <span class="font-bold text-lg"> $10.00</span>
-            </div>
-            <hr>
-            <div class="text-right py-4 ">
+            <% for(let pizza of object.values(session.cart.items)){ %>
 
-                <div>
-                    <span class="text-lg font-bold">Total amount</span>
-                    <span class="cost text-2xl font-bold ml-4">$10.00</span>
+                <div class=" flex items-center my-8">
+                    <img class="w-24" src="/img/pizza_img_for_app.png" style="height: 48px;
+                width: 59px;" alt="">
+                    <div class=" flex-1 ml-4">
+                        <h1>Marinara</h1>
+                        <span>MEDIUM</span>
+                    </div>
+                    <span class="flex-1">1pcs</span>
+                    <span class="font-bold text-lg"> $10.00</span>
                 </div>
-                <div>
-                    <form action="" class="mt-12">
-                        <input class="border border-gray-400 p-2 w-1/2 my-4" type="text" placeholder="Phone Number ">
-                        <input class="border border-gray-400 p-2 w-1/2 my-4" type="text" placeholder="Address ">
+                <hr>
+                <div class=" flex items-center  my-8">
+                    <img class="w-24" src="/img/<%= pizza.image  >" style="height: 48px;
+                width: 59px;" alt="">
+                    <div class=" flex-1 ml-4">
+                        <h1>Marinara</h1>
+                        <span>MEDIUM</span>
+                    </div>
+                    <span class="flex-1">1pcs</span>
+                    <span class="font-bold text-lg"> $10.00</span>
+                </div>
+                <% } %>
+                    <hr>
+                    <div class=" flex items-center my-8">
+                        <img class="w-24" src="/img/pizza_img_for_app.png" style="height: 48px;
+                width: 59px;" alt="">
+                        <div class=" flex-1 ml-4">
+                            <h1>Marinara</h1>
+                            <span>MEDIUM</span>
+                        </div>
+                        <span class="flex-1">1pcs</span>
+                        <span class="font-bold text-lg"> $10.00</span>
+                    </div>
+                    <hr>
+                    <div class="text-right py-4 ">
+
                         <div>
-                            <!-- <button class="btn-primary px-6 py-2 rounded-full text-white mt-6 font-bold"
+                            <span class="text-lg font-bold">Total amount</span>
+                            <span class="cost text-2xl font-bold ml-4">$10.00</span>
+                        </div>
+                        <div>
+                            <form action="" class="mt-12">
+                                <input class="border border-gray-400 p-2 w-1/2 my-4" type="text"
+                                    placeholder="Phone Number ">
+                                <input class="border border-gray-400 p-2 w-1/2 my-4" type="text" placeholder="Address ">
+                                <div>
+                                    <!-- <button class="btn-primary px-6 py-2 rounded-full text-white mt-6 font-bold"
                                 type="submit">Order Now
                             </button>    -->
+                                </div>
+                            </form>
                         </div>
-                    </form>
-                </div>
-                <a href="" class="inline-block cursor-pointer px-6"> Login to Continue </a>
-            </div>
+                        <a href="" class="inline-block cursor-pointer px-6"> Login to Continue </a>
+                    </div>
         </div>
         <!-- <div class=" empty-cart py-16">
                             <div class="container mx-auto text-center">

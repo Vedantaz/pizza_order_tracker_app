@@ -78,3 +78,15 @@ soln.  npm install express-session
 
 7. Error: Cannot find module 'connect-mongo'
 Require stack:
+yarn add connect-mongo
+
+8. TypeError: Class constructor MongoStore cannot be invoked without 'new'
+soln :  yarn remove connect-mongo
+        yarn add connect-mongo@3
+
+9. error: MongoNetworkError: connect ECONNREFUSED ::1:27017
+            at connectionFailureError
+   : Because of node.js version and some modified in that , it doen't support mongodb ke 27017 ka version ko ...
+   So , instead of writing localhost:27017 we will write 127.0.0.1 
+        
+# Class ya phir constructor function ko call krna hain oh use : new keyword before stating and asssigning into it.
